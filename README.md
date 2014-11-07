@@ -108,3 +108,6 @@ These are the methods currently supported:
 |output| response format  (xml or json)|optional|
 [Official documentation](http://www.tistory.com/guide/api/post.php#post-read)
 
+##Notes
+For a Python 3 alternative,  check out [kastden/tistory](https://github.com/kastden/tistory)
+
