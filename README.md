@@ -67,9 +67,17 @@ function callback (err, res, body){
 }
 
 ```
+##Constructors
+- **Tistory.TistoryOauth2(config)**
+> note: the `config` parameter accepts a dictionary, see [Obtaining an access_token](#obtaining-an-access_token) for more info.
+- **Tistory.TistoryAPI(access_token, format)**
+> note: the `format` parameter is optional, defaults to *`"XML"`* but can be set to *`"JSON"`* if needed.
+
+See above for examples.
+
 ##Methods
 These are the methods currently supported:
-###t.post.write(params, callback) [](http://www.tistory.com/guide/api/manage/list)
+###t.post.write(params, callback)
 |params|description|required|
 |---------|-----|-----|-----|
 |targetUrl|Blog Url |Yes|
@@ -78,7 +86,6 @@ These are the methods currently supported:
 |visibility| Blog-Entry visability setting|optional|
 |published|UNIX_TIMESTAMP() 예약발송|optional|
 |tag|Tags|optional|
-|output| response format (xml or json) |optional|
 [Official documentation](http://www.tistory.com/guide/api/post.php#post-write)
 ###t.post.modify(params, callback)
 |params|description|required|
@@ -90,7 +97,6 @@ These are the methods currently supported:
 |visibility| Blog-Entry visability setting|optional|
 |published|UNIX_TIMESTAMP() 예약발송|optional|
 |tag|Tags|optional|
-|output| response format  (xml or json)|optional|
 [Official documentation](http://www.tistory.com/guide/api/post.php#post-modify)
 ###t.post.list(params, callback)
 |params|description|required|
@@ -98,14 +104,12 @@ These are the methods currently supported:
 |targetUrl|Blog Url |Yes|
 |page||optional|
 |count|entries per page|optional|
-|output| response format  (xml or json)|optional|
 [Official documentation](http://www.tistory.com/guide/api/post.php#post-list)
 ###t.post.read(params, callback)
 |params|description|required|
 |---------|-----|-----|
 |targetUrl|Blog Url |Yes|
 |postId| Blog-Entry ID-number | Yes |
-|output| response format  (xml or json)|optional|
 [Official documentation](http://www.tistory.com/guide/api/post.php#post-read)
 
 ##Notes
