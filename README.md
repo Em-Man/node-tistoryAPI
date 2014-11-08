@@ -14,7 +14,7 @@ npm install request
 ```
 
 ### Obtaining an access_token
-There is a TistoryOAuth2 helper included for authorizing your app on behalf of the user and then requesting an access_token.
+There is a `TistoryOAuth2` helper included for authorizing your app on behalf of the user and then requesting an access_token.
 
 ```javascript
 var Tistory = require('./node-tistoryAPI/lib')
@@ -68,7 +68,7 @@ function callback (err, res, body){
 
 ```
 ##Constructors
-- **Tistory.TistoryOauth2(config)**
+- **Tistory.TistoryOAuth2(config)**
 
 > note: the `config` parameter accepts a dictionary, see [Obtaining an access_token](#obtaining-an-access_token) for more info.
 
@@ -79,7 +79,7 @@ function callback (err, res, body){
 See above for examples.
 
 ##Methods
-These are the methods currently supported:
+These are the `TistoryAPI` methods currently supported:
 ###t.post.write(params, callback)
 |params|description|required|
 |---------|-----|-----|-----|
