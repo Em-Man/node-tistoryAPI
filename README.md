@@ -17,7 +17,7 @@ npm install request
 There is a TistoryOAuth2 helper included for authorizing your app on behalf of the user and then requesting an access_token.
 
 ```javascript
-var Tistory = require('./node-tistoryAPI')
+var Tistory = require('./node-tistoryAPI/lib')
 
 var config = {
     "client": {
@@ -41,7 +41,7 @@ Tistory API
 ============
 Below are some examples on how to use the API
 ```javascript
-var Tistory = require('./node-tistoryAPI')
+var Tistory = require('./node-tistoryAPI/lib')
 
 var access_token = 'abc123';
 var t = new Tistory.TistoryAPI(access_token);
