@@ -69,8 +69,11 @@ function callback (err, res, body){
 ```
 ##Constructors
 - **Tistory.TistoryOauth2(config)**
+
 > note: the `config` parameter accepts a dictionary, see [Obtaining an access_token](#obtaining-an-access_token) for more info.
+
 - **Tistory.TistoryAPI(access_token, format)**
+
 > note: the `format` parameter is optional, defaults to *`"XML"`* but can be set to *`"JSON"`* if needed.
 
 See above for examples.
